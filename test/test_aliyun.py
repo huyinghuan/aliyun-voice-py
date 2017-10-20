@@ -8,7 +8,7 @@ ACCESS_ID = ""
 ACCESS_KEY = ""
 
 class TestVoice(unittest.TestCase):
-  def test_get_voice(self):
+  def test_getVoice(self):
     auth = Voice(ACCESS_ID, ACCESS_KEY)
     content = auth.get_voice("你好")
     self.assertIsNotNone(content)
